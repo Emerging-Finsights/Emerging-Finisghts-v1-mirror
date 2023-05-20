@@ -1,0 +1,460 @@
+.contact-us {
+    max-width: 100vw;
+}
+
+.padding {
+    padding-bottom: 200px;
+    background-color: #fffff1;
+    max-width: 100vw;
+}
+
+.social-links {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 25vw;
+    height: 250px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .social-links {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: 25vw;
+        height: 175px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        margin-left: 150px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: center;
+        position: relative;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .social-links {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: max-content;
+        height: 175px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        justify-content: center;
+        position: relative;
+        top: -200px;
+        left: -5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .social-links {
+        background-color: #ffffff;
+        border-radius: 15px;
+        width: max-content;
+        height: 170px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-self: center;
+        justify-content: center;
+        position: relative;
+        left: -5px;
+    }
+}
+
+.contact-header {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .contact-header {
+        font-size: 25px;
+    }
+}
+
+.contact-us {
+    background-color: #f0ecdd;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+.nl-signup {
+    padding-top: 50px;
+    padding-left: 75px;
+    padding-right: 50px;
+    background-image: linear-gradient(#c2edf3, #e9f5f8);
+    border-radius: 15px;
+    width: 65vw;
+    height: 250px;
+    position: absolute;
+    right: 50px;
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+    .nl-signup {
+        padding-top: 20px;
+        padding-left: 50px;
+        background-image: linear-gradient(#c2edf3, #e9f5f8);
+        border-radius: 15px;
+        width: 65vw;
+        height: 175px;
+        position: absolute;
+        right: 25px;
+        margin-top: 50px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .nl-signup {
+        padding-top: 20px;
+        padding-left: 50px;
+        background-image: linear-gradient(#c2edf3, #e9f5f8);
+        border-radius: 15px;
+        width: 90vw;
+        height: 175px;
+        position: absolute;
+        margin-top: 50px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .nl-signup {
+        padding-top: 20px;
+        padding-left: 20px;
+        background-image: linear-gradient(#c2edf3, #e9f5f8);
+        border-radius: 15px;
+        width: 90vw;
+        height: 175px;
+        position: absolute;
+        margin-top: 50px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nl-signup {
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 0px;
+        background-image: linear-gradient(#c2edf3, #e9f5f8);
+        border-radius: 15px;
+        width: 90vw;
+        height: 175px;
+        position: absolute;
+        margin-top: 25px;
+        color: #ffffff;
+    }
+}
+
+.signup-header {
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .signup-header {
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .signup-header {
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .signup-header {
+        padding-bottom: 5px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .signup-header {
+        padding-bottom: 5px;
+        font-size: 22px;
+    }
+}
+
+.email-input {
+    border-radius: 15px;
+    height: 60px;
+    background-color: #e2e2e2;
+    color: #000000;
+    padding-left: 20px;
+    font-size: 20px;
+    width: 500px;
+}
+
+@media screen and (max-width: 1170px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 60px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 1080px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 60px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 50px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 851px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 50px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 780px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 60px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 55vw;
+    }
+}
+
+@media screen and (max-width: 580px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 60px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 17px;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .email-input {
+        border-radius: 15px;
+        height: 55px;
+        background-color: #e2e2e2;
+        color: #000000;
+        padding-left: 10px;
+        font-size: 16px;
+        width: 55vw;
+    }
+}
+
+::placeholder {
+    opacity: 1.0;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+.subscribe-button {
+    background-color: #7f7f7f;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 60px;
+        border-radius: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 20px;
+        font-size: 18px;    
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 60px;
+        border-radius: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-left: 15px;
+        font-size: 17px;    
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 6px;
+        padding-right: 6px;
+        margin-left: 10px;
+        font-size: 16px;    
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 50px;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 60px;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 10px;
+        font-size: 15px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subscribe-button {
+        background-color: #7f7f7f;
+        height: 55px;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-left: 5px;
+        font-size: 13px;
+        width: 70px;
+    }
+}
+
+.social-icons {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+.linkedIn {
+    background-color: #9d4341;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+.email-icon {
+    background-color: #c2edf3;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+.instagram {
+    background-color: #d4b9d6;
+}
+
+@media screen and (max-width: 1000px) {
+    .instagram {
+        scale: 90%;
+        margin-right: 10px;
+    }
+
+    .email-icon {
+        scale: 90%;
+        margin-right: 10px;
+    }
+
+    .linkedIn {
+        scale: 90%;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .instagram {
+        scale: 80%;
+    }
+
+    .email-icon {
+        scale: 80%;
+    }
+
+    .linkedIn {
+        scale: 80%;
+    }
+
+}

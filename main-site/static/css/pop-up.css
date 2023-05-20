@@ -1,0 +1,265 @@
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.popup-text {
+    visibility: hidden;
+    background-image: linear-gradient(#c2edf3 ,#e4f5fa);
+    color: #000000;
+    border-radius: 0px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -70%;
+    left: -50%;
+    margin-left: 8px;
+    width: 400px;
+    min-width: 300px;
+    min-height: 650px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #000000;
+    border-radius: 45px;
+    font-size: 20px;
+} 
+
+
+    
+ 
+.popup .show {
+    visibility: visible;
+    animation: fadeIn 0.8s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.popup-img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.profile-header {
+    text-align: center;
+    border: 2px solid black;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.profile-info {
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+
+}
+
+.info {
+    padding-bottom: 5px;
+}
+
+.info-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+@media (max-width: 650px) { 
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        justify-content: left;
+        justify-self: left;
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .popup-text {
+        visibility: hidden;
+        background-image: linear-gradient(#c2edf3 ,#e4f5fa);
+        color: #000000;
+        position: fixed;
+        z-index: 1;
+        width: 90vw;
+        min-height: 100vh;
+        height: 100vh;
+        border: 2px solid #000000;
+        border-radius: 15vw;
+        font-size: 20px;
+        justify-content: left;
+        bottom: 0vh;
+        left: 3vw;
+    } 
+
+    .info-container {
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .profile-info {
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 10%;
+        padding-top: 10px;
+        font-size: 20px;
+    
+    }
+
+    .popup-img {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .profile-header {
+        text-align: center;
+        border: 2px solid black;
+        width: 300px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-family: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 450px) { 
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        justify-content: left;
+        justify-self: left;
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .popup-text {
+        visibility: hidden;
+        background-image: linear-gradient(#c2edf3 ,#e4f5fa);
+        color: #000000;
+        position: fixed;
+        z-index: 1;
+        width: 90vw;
+        min-height: 100vh;
+        height: 100vh;
+        border: 2px solid #000000;
+        border-radius: 15vw;
+        font-size: 19px;
+        justify-content: left;
+        bottom: 0vh;
+        left: 3vw;
+    } 
+
+    .info-container {
+        padding-bottom: 30px;
+        height: auto;
+    }
+
+    .profile-info {
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 10%;
+        padding-top: 10px;
+        font-size: 19px;
+    
+    }
+
+    .popup-img {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .profile-header {
+        text-align: center;
+        border: 2px solid black;
+        width: 300px;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-family: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 390px) { 
+    .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        justify-content: left;
+        justify-self: left;
+        padding-right: auto;
+        padding-left: auto;
+    }
+
+    .popup-text {
+        visibility: hidden;
+        background-image: linear-gradient(#c2edf3 ,#e4f5fa);
+        color: #000000;
+        position: fixed;
+        z-index: 1;
+        width: 90vw;
+        min-height: 100vh;
+        height: 80vh;
+        border: 2px solid #000000;
+        border-radius: 15vw;
+        font-size: 13px;
+        justify-content: left;
+        top:0vh;
+        left: 3vw;
+    } 
+
+    .info-container {
+        padding-bottom: 10px;
+        height: auto;
+    }
+
+    .profile-info {
+        text-align: left;
+        background-color: #ffffff;
+        border-radius: 10%;
+        padding-top: 10px;
+        font-size: 13px;
+    
+    }
+
+    .popup-img {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .profile-header {
+        text-align: center;
+        border: 2px solid black;
+        width: 70vw;
+        border-radius: 15px;
+        margin-top: 20px;
+        font-family: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}

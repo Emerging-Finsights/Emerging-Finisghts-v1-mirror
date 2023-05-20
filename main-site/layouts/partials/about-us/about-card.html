@@ -1,0 +1,45 @@
+<div class="about-card popup" onclick="toggleProfilePopup('{{ .name }}')">
+    {{ if .thumbnail }}
+    <div class="relative">
+      <img src="{{ partial "utility/person-thumbnail.html" . }}" alt="{{ .name }}" class="shadow-sm w-52 h-52 object-cover about-img"/>
+    </div>
+    {{ end }}
+    <div class="my-2 text-xl font-semibold text-center">{{ .name }}</div>
+    <div class="description-text">{{ .position }}</div>
+    <div class="popup-text" id="{{ .name }}">
+      <div class="profile-header">
+        <div>{{ .name }} - {{ .position}}</div>
+      </div>
+      {{ if .thumbnail }}
+      <div>
+        <img src="{{ partial "utility/person-thumbnail.html" . }}" alt="{{ .name }}" class="shadow-sm w-52 h-52 object-cover about-img popup-img"/>
+      </div>
+      {{ end }}
+      <div class="info-container">
+        <div class="profile-info">
+          <div class="info"><b>Degree:</b> {{ .degree }}</div>
+          <div class="info"><b>Interested In:</b> {{ .interested }}</div>
+          <div class="info"><b>Interesting Fact:</b> {{ .fact }}</div>
+          <a target="_blank" href="{{ .linkedin }}" class="block"> <div class="info"><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mx-auto"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg></div> </a>
+        </div>
+      </div>
+    </div>
+  </div>

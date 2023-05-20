@@ -1,0 +1,14 @@
+
+
+@layer utilities {
+    @variants hover, focus, group-hover {
+        /* actually has a shadow lol */
+        .rounded-no-shadow {
+            @apply rounded-xl shadow-xl 
+        }
+        
+        .rounded-no-shadow-bottom {
+            @apply rounded-b-xl shadow-none
+        }
+    }
+}

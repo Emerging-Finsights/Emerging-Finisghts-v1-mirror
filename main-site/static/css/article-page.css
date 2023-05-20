@@ -1,0 +1,56 @@
+.page-container {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/svg/wave.svg");
+    background-position: center;
+    max-width: 100vw;
+}
+/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,256L48,245.3C96,235,192,213,288,202.7C384,192,480,192,576,160C672,128,768,64,864,42.7C960,21,1056,43,1152,48C1248,53,1344,43,1392,37.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z" style="--darkreader-inline-fill: #007acc;" data-darkreader-inline-fill=""></path></svg> */
+
+.list-title {
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+.filter-bar {
+    padding-left: 25px;
+}
+
+.article-filter {
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #e4e4e4;
+    font-size: 20px;
+}
+
+.page-divide {
+    height: 1px;
+    border-width: 1px;
+    border-color: black;
+    background-color: black;
+    color: black;
+    opacity: 1.0;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    max-width: 95vw;
+}
+
+@media screen and (max-width: 1000px) { 
+    .page-divide {
+        height: 1px;
+        border-width: 1px;
+        border-color: black;
+        background-color: black;
+        color: black;
+        opacity: 1.0;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        max-width: 90vw;
+    }
+}
+
+.article-card {
+    margin-top: 25px;
+}

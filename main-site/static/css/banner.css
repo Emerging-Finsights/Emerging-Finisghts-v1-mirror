@@ -1,0 +1,17 @@
+.banner-container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .tri-text-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.banner-num {
+  color: #63A8A6;
+}
+  
+  

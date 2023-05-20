@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="page-container">
+<h1 class="container text-3xl font-bold list-title">{{ .Params.pageTitle }}</h1>
+  
+  <!--div class="container flex filter-bar">
+    <div class="article-filter">Sort By:</div>
+    <div class="article-filter">Most Recent</div>
+    <div class="article-filter">Most Read</div>
+  </div-->  
+
+  <hr class="page-divide">
+
+  {{ $paginator := .Paginate .Pages.ByDate.Reverse 6 }}
+  <div class="article-card mx-auto lg:px-8 md:px-4 px-2">
+    {{ range $paginator.Pages }}
+      {{- partial "article/article-card.html" . -}}
+    {{ end }}
+  </div>
+</div>
+
+  {{- partial "utility/pagination.html" . -}}
+  
+{{ end }}

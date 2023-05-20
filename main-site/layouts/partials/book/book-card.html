@@ -1,0 +1,42 @@
+<div id="{{ .Permalink }}" data-type="bookmark" data-id="{{ md5 .Permalink }}" class="rounded book-container flex wrap">
+  <div class="relative flex">
+    <ul class="book-image-link">
+      <li>
+        {{ if .Params.thumbnail }}
+        <img src="{{ partial "utility/thumbnail.html" . }}" alt="{{ .Site.Title }}" class="book-image"/>
+        {{ end }}
+      </li>
+      <li>
+        <a target="_blank" href="{{ .Params.link }}">
+          <p class="book-buy-link"> BUY NOW </p>
+        </a>
+      </li>
+    </ul>
+    <div class="book-main">
+      EFS rating:
+      <div class="book-rating">
+      {{ range (seq 1 .Params.rating) }}⭐{{ end }}
+      {{ .Params.rating }}
+      </div>
+      <div class="book-description">
+        <b>Review:</b>
+        <div class="prose"> {{ .Content | markdownify }} </div>
+      </div>  
+    </div>
+    <div class="book-date absolute top-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5">
+      {{ .Params.date.Format "Jan 2, 06" }}
+    </div>
+
+    {{ if ne (.Scratch.Get "hide_bookmark_button") true }}
+    <div id="bookmark-empty" style="display: none;" onclick="bookmarks.bookmarkItem(this, '{{ md5 .Permalink }}', '{{ .Permalink }}')" class="absolute top-4 left-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+      <img src="/images/bookmark-empty.png">
+    </div>
+
+    <div id="bookmark-filled" style="display: none;" onclick="bookmarks.unbookmarkItem(this, '{{ md5 .Permalink }}', '{{ .Permalink }}')" class="absolute top-4 left-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+      <img src="/images/bookmark-filled.png">
+    </div>
+    {{ end }}
+  </div>
+</div>
+
+<hr class="page-divide w-full mx-auto">

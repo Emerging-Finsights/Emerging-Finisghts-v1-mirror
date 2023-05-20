@@ -1,0 +1,118 @@
+<header>
+  <script type="text/javascript" src="/scripts/header.js"></script>
+  <script type="text/javascript" src="/scripts/bookmarks.js"></script>
+
+  
+  
+  <div class="container flex justify-around md:justify-between gap-4 flex-wrap pl-6 pr-6 mx-auto">
+
+    <div class="flex items-center gap-4 lg:gap-6">
+
+      <div>
+        <div id="mySidenav" class="sidenav upper-nav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNavMenu()">&times;</a>
+          <ul>
+            <li> <a href="/" class="mobile-show"> Home </a> </li>
+
+            {{ range (where .Site.Sections "Params.prefix_section" true) }}
+            <li> <a href="{{ .Permalink }}" class="mobile-show"> {{ .Title }} </a> </li>
+            {{ end }}
+
+            <li> <a href="/deadlines" class="mobile-show"> Deadlines </a> </li>
+  
+            {{ range (where .Site.Sections "Params.prefix_section" false) }}
+            <li> <a href="{{ .Permalink }}" class="mobile-show"> {{ .Title }} </a> </li>
+            {{ end }}
+            <li> <a href="/about" class="mobile-const"> About Us </a> </li>
+            <li> 
+              <a href="javascript:void(0)" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'}); closeNavMenu()" class="mobile-const">
+                <p id="contact"> Contact </p>
+              </a>
+            </li>
+            <li> <a id="signin-button" href="/sign-in" style="display: none;" class="mobile-const"> Membership </a> </li>
+            <li> <a id="account-button" href="/account" style="display: none;"> Membership </a> </li>
+            <li> <button id="logout-button" style="display: none;" class="logout"> Logout </button> </li>
+          </ul>
+        </div>
+        
+        <span style="font-size:35px;cursor:pointer; color: #63A8A6;" onclick="openNavMenu()" class="goright">&#9776;</span>
+
+        <script>
+          function openNavMenu() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+  
+          function closeNavMenu() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+        </script>
+      </div>
+      
+
+      {{ if .Site.Params.darkModeToggle }}
+      <div class="grid place-items-center">
+        <span class="toggle-dark-mode inline-block cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="3" />
+            <line x1="12" y1="5" x2="12" y2="5.01" />
+            <line x1="17" y1="7" x2="17" y2="7.01" />
+            <line x1="19" y1="12" x2="19" y2="12.01" />
+            <line x1="17" y1="17" x2="17" y2="17.01" />
+            <line x1="12" y1="19" x2="12" y2="19.01" />
+            <line x1="7" y1="17" x2="7" y2="17.01" />
+            <line x1="5" y1="12" x2="5" y2="12.01" />
+            <line x1="7" y1="7" x2="7" y2="7.01" />
+          </svg>
+        </span>
+      </div>
+      {{ end }}
+    </div>
+      
+    <a class="logolink relative " href="{{ .Site.Home.Permalink }}">
+      <img src="/images/logo2-experiment.png" alt="{{ .Site.Title }}">
+    </a>
+
+    
+    {{ if .Site.Params.enableSearch }}
+        <li class="grid place-items-center">
+          <span class="open-search inline-block cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke-width="2.0"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: #63A8A6">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="10" cy="10" r="7" />
+              <line x1="21" y1="21" x2="15" y2="15" />
+            </svg>
+          </span>
+        </li>
+        {{ end }}
+    
+  </div>
+
+  <div class="p-6 mx-auto nav-bar mobile-hide">
+    <ul class="flex flex-wrap items-center gap-4 lg:gap-x-20 upper-nav text-xl">
+      <li> <a href="/" class="hover:underline"> Home </a> </li>
+
+      {{ range (where .Site.Sections "Params.prefix_section" true) }}
+        <li> <a href="{{ .Permalink }}" class="hover:underline"> {{ .Title }} </a> </li>
+      {{ end }}
+
+      <li> <a href="/deadlines" class="hover:underline"> Deadlines </a> </li>
+  
+      {{ range (where .Site.Sections "Params.prefix_section" false) }}
+        <li> <a href="{{ .Permalink }}" class="hover:underline"> {{ .Title }} </a> </li>
+      {{ end }}
+
+      <li> <a href="/sign-in" class="hover:underline"> Membership </a> </li>
+    </ul>
+  </div>
+
+  <div class="pt-4 mx-auto text-center">
+    <h4 class="pb-1 mx-auto font-bold text-sm">Current trading rates</h4>
+    {{- partial "market-ticker.html" . -}}
+  </div>
+  
+
+</header>
+  

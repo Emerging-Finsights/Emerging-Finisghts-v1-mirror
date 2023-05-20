@@ -1,0 +1,61 @@
+{{ define "main" }}
+
+<script type="text/javascript" src="/scripts/account.js"></script>
+
+<div class="container mx-auto px-6 pt-6"> 
+  <div class="container flex justify-around md:justify-between gap-4 flex-wrap p-6 mx-auto">
+  <h1 class="text-3xl font-bold"> Your EFS </h1>
+  <a href="/my-profile">
+    <h1 class="my-profile-link text-3xl font-bold">Manage Profile</h1>
+  </a>
+  </div>
+
+    <!-- Displayed when not signed in -->
+  <div id="bookmarks-nologin" style="display: none;">
+      <p style="text-align: center;"> Sorry you are not signed in! </p>
+      <p style="text-align: center;"> To sign-in or create an account click <a style="text-decoration: underline;" href="/sign-in">here</a>. </p>
+  </div>
+</div>
+
+<!-- Displayed when signed in -->
+<div id="bookmarks-loggedin" style="display: none;">
+
+  <div class="container mx-auto px-6 pt-6">
+    <h2 class="px-6 pt-6 text-3xl font-bold"> Bookmarks </h2>
+  
+    <div class="p-6 mx-auto acc-bookmark-bar">
+      <ul class="flex flex-wrap items-center gap-4 lg:gap-40 upper-nav text-xl">
+        <li> <button onclick="accountPage.showAllBookmarks()"> ALL </button> </li>
+        <li> <button onclick="accountPage.showArticles()"> ARTICLES </button> </li>
+        <li> <button onclick="accountPage.showBooks()"> BOOKS </button> </li>
+        <li> <button onclick="accountPage.showDeadlines()"> DEADLINES </button> </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="bookmarks-articles"> 
+    <div class="container mx-auto px-6 pt-6">
+      {{ range (where .Site.RegularPages.ByDate.Reverse "Type" "blog").ByDate.Reverse }}
+        <div data-type="blog" style="display: none;" class="bookmark-transition">
+          {{- partial "article/article-card.html" . -}}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <div id="bookmarks-books"> 
+  <div class="container mx-auto px-6 pt-6">
+      {{ range (where .Site.RegularPages.ByDate.Reverse "Type" "book").ByDate.Reverse }}
+      <div data-type="blog" style="display: none;" class="bookmark-transition">
+        {{- partial "book/book-card.html" . -}}
+      </div>
+      {{ end }}
+  </div>
+
+  <div style="display: none;" id="bookmarks-deadlines">
+    <h1 class="text-center text-3xl font-bold"> Coming soon... </h1>
+  </div>
+</div>
+
+<div class="padding"></div>
+{{ end }}

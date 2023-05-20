@@ -1,0 +1,15 @@
+{{ $author := false }}
+{{ $authorName := . }}
+{{ range site.Data.aboutUs.sections }}
+  {{ range .people }}
+    {{ if eq .name $authorName }}
+      {{ $author = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not (eq $author false) }}
+    {{ return $author }}
+{{ else }}
+    {{ return nil }}
+{{ end }}

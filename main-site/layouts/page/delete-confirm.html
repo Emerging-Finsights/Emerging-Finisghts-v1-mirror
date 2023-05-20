@@ -1,0 +1,13 @@
+{{ define "main" }}
+<script defer type="text/javascript" src="/scripts/delete-account.js"></script> 
+
+<div style="text-align: center; padding-top: 50px; font-size: 30px;">Are you sure you want to delete your account?</div>
+
+<div class="container mx-auto">
+    <div class="delete-confirmation">
+    <span class="delete-button" onclick="window.location.replace('/my-profile')">No</span> 
+    <span class="delete-button" onclick="deleteAccount()">Yes</span>
+    </div>
+</div>
+
+{{ end }}

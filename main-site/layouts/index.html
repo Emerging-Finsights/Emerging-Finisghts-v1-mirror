@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div>
+  <div class="pb-10">
+    {{- partial "banner.html" . -}}
+  </div>
+
+  <div class="relative bg-black bg-opacity-60 pt-10 pb-20">
+    <div class="absoulte text-center text-white text-4xl bg-efs-logo p-4 rounded-no-shadow mx-auto w-4/5 -mt-20 mb-16">Latest Posts</div>
+    <div class="mx-auto flex flex-row flex-wrap md:flex-nowrap justify-center test"> 
+      <div class="flex-grow md:flex-grow-0 flex flex-col gap-8 pr-5 ml-5">
+        {{- partial "article/hp-article-of-the-month.html" . -}}
+        {{- partial "book/hp-book-of-the-week.html" . -}}
+      </div>
+      
+      <div class="my-auto">
+        {{ range .Site.Sections.Reverse }}
+        {{ if .Params.visible_on_homepage }}
+        <div class="">
+          <p class="text-3xl font-bold ml-8 mb-2 py-3 text-left text-white hover:text-black hover:underline"> 
+            <a href="{{ .Permalink }}">
+              {{ .Params.pageTitle }} 
+            </a>
+          </p>
+
+          <div class="p-3 flex flex-wrap justify-center gap-4 lg:gap-8">
+            {{ range first 3 (where .RegularPages.ByDate.Reverse "Type" "blog").ByDate.Reverse }}
+              {{ .Scratch.Set "hide_author_link" true }}
+              {{- partial "article/hp-article-card.html" . -}}
+              {{ .Scratch.Delete "hide_author_link" }}
+            {{ end }}
+          </div>
+          <hr class="bg-black border-black border-2 mt-5 w-11/12 mx-auto">
+        </div>
+        {{ end }}
+        {{ end }}
+        <div>
+          <p class="text-3xl font-bold ml-8 mb-2 py-3 text-left text-white hover:text-black hover:underline"> 
+            <a href="{{ .Permalink }}">
+              Deadlines 
+            </a>
+          </p>
+  
+          <div class="p-3 flex flex-wrap justify-center gap-4 lg:gap-8">
+            <div class="group w-64 h-64 md:w-72 md:h-72 threexl relative flex-grow-0 flex-shrink-0 rounded-no-shadow overflow-hidden">
+              <div class="transform overflow-hidden">
+                <img src="/images/logo1.jpeg" alt="{{ .Params.title }}" 
+                  class="filter blur transistion-blur duration-200 transform scale-105 w-full h-full object-cover"/>
+              </div>
+              <div class="
+                absolute w-full bottom-0 left-0 p-1 md:p-2
+                text-white bg-gray-800 bg-opacity-60 h-full">
+              </div>  
+            </div>
+
+            <div class="group w-64 h-64 md:w-72 md:h-72 threexl relative flex-grow-0 flex-shrink-0 rounded-no-shadow overflow-hidden">
+              <div class="transform overflow-hidden">
+                <img src="/images/jp-morgan.jpg" alt="{{ .Params.title }}" 
+                  class="filter blur transistion-blur duration-200 transform scale-105 w-full h-full object-cover"/>
+              </div>
+              <div class="
+                absolute w-full bottom-0 left-0 p-1 md:p-2
+                text-white bg-gray-800 bg-opacity-60 h-full">
+              </div>  
+            </div>
+  
+  
+            <div class="group w-64 h-64 md:w-72 md:h-72 threexl relative flex-grow-0 flex-shrink-0 rounded-no-shadow overflow-hidden">
+              <div class="transform overflow-hidden">
+                <img src="/images/ft.png" alt="{{ .Params.title }}" 
+                  class="filter blur transistion-blur duration-200 transform scale-105 w-full h-full object-cover"/>
+              </div>
+              <div class="
+                absolute w-full bottom-0 left-0 p-1 md:p-2
+                text-white bg-gray-800 bg-opacity-60 h-full">
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+        {{ if gt (len (where .Site.RegularPages.ByDate.Reverse "Type" "blog")) 6 }}
+        <div class="text-center mb-8"-->
+          <!--a class="px-8 py-3 rounded transition-colors text-gray-500 hover:text-gray-800" href="/articles">
+            More articles
+          </a-->
+        </div>
+        {{ end }}
+    </div>
+  </div>
+</div>
+  
+{{ end }}

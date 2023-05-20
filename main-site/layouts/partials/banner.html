@@ -1,0 +1,58 @@
+<div class="banner-container items-center mb-10">
+  <div>
+      <img src="/images/welcomeBannerPhone.png" alt="welcome" class="opacity-75 block md:hidden" style="width:100%;">
+      <img src="/images/welcomeBanner2.webp" alt="welcome" class="opacity-75 hidden md:block" style="width:100%;">
+  </div>
+    <div class="text-center mx-auto">
+      <div class="tri-text-block">
+        <div class="grid grid-cols-3 gap-x-36 pr-10 md:gap-x-52 pr-0">
+          <div class="w-min grid grid-rows-3 gap-y-0 lg:w-max">
+            <div class="self-end font-bold text-sm md:text-xl">Launched</div>
+            <div class="banner-num font-bold text-7xl md:text-9xl">20</div>
+            <div class="self-start font-bold text-sm md:text-xl">September</div>             
+          </div>
+          <div class="w-min grid grid-rows-3 gap-y-0 lg:w-max">
+            <div class="invisible"></div>
+            <div id="employee-counter" class="banner-num font-bold text-7xl md:text-9xl" data-counter="14">14</div>
+            <div class="self-start font-bold text-sm md:text-xl">employees</div>
+          </div>
+          <div class="w-min grid grid-rows-3 gap-y-0 lg:w-40">
+            <div class="invisible"></div>
+            <div id="jobs-counter" class="banner-num font-bold text-7xl md:text-9xl" data-counter="3">3</div>
+            <div class="top-0 text-sm font-bold md:text-xl">Jobs secured since joining</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      var employeeCounter = document.getElementById("employee-counter");
+      var jobsCounter = document.getElementById("jobs-counter");
+
+      function countUp(node)
+      {
+        var endCount = Number(node.innerText);
+        var counter = 0;
+        
+        var timeToFinish = 2500;
+        var waitTime = timeToFinish / endCount ;
+
+        var id = setInterval(func, waitTime);
+        function func() {
+          counter += 1;
+          node.innerText = counter;
+          if(counter >= endCount)
+          {
+            node.innerText = endCount;
+            clearInterval(id)
+          }
+        };
+      }
+
+      [employeeCounter, jobsCounter].forEach(element => {
+        countUp(element)
+      });
+
+    </script>
+  </div>
+</div>

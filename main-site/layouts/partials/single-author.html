@@ -1,0 +1,56 @@
+<div class="text-white mx-auto py-4">
+    <div class="flex flex-wrap justify-center gap-8">
+        <img class="block shadow-xl rounded-full w-48 h-48 my-auto object-cover" src="{{ partial "utility/person-thumbnail.html" . }}"/>
+
+        <div class="px-2">
+            <p class="text-2xl font-bold">
+                About the author...
+            </p>
+
+            <p class="text-xl font-semibold pt-2"> 
+                <a href="/about/#{{ .name }}"> {{ .name }} </a> 
+            </p> 
+
+            <p class="text-lg">
+                {{ .position }} 
+            </p>
+
+            <p class="text-lg pt-4">
+                Degree: </span> {{ .degree }} 
+            </p> 
+
+            <p class="text-lg">
+                 Interested in: {{ .interested }} 
+            </p> 
+
+            <p class="text-lg">
+                 Interesting Fact: {{ .fact }} 
+            </p> 
+
+            <a target="_blank" href="{{ .linkedin }}" class="block p-2">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="hover:animate-bounce">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="8" y1="11" x2="8" y2="16" />
+                    <line x1="8" y1="8" x2="8" y2="8.01" />
+                    <line x1="12" y1="16" x2="12" y2="11" />
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+            </a>
+        </div>
+    </div>
+
+    <a class="block text-2xl text-center hover:underline" href="/about"> 
+        Show all members 
+    </a>
+</div>

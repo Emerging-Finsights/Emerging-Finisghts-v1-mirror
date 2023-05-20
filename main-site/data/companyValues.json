@@ -1,0 +1,24 @@
+{
+    "values" : [
+        {
+            "title" : "Development",
+            "description" : "We want our people to be better today than they were yesterday."
+        },
+        {
+            "title" : "Freedom",
+            "description" : "We believe in giving people the tools to create their own narrative."
+        },
+        {
+            "title" : "Consistency",
+            "description" : "Being consistently consistent is everything we do."
+        },
+        {
+            "title" : "Dependence",
+            "description" : "We trust and depend on each other in the pursuit of a common goal."
+        },
+        {
+            "title" : "Dynamic",
+            "description" : "An openess to change direction."
+        }
+    ]
+}

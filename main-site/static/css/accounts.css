@@ -1,0 +1,722 @@
+.acc-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 3px;
+}
+
+.acc-subtitle {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.acc-background {
+    background-color: #e7e6e6;
+    background-image: linear-gradient(to right, #b57193, #ffcce6);
+   
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 25px;
+}
+
+.acc-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.acc-signup-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.acc-forgot-password {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.acc-button { 
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background-color: #a5d4d9;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+#signin-error {
+    margin: auto;
+}
+
+.acc-inputbox {
+    border: 2px solid #a5d4d9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    .acc-background {
+        background-color: #e7e6e6;
+        background-image: linear-gradient(to right, #b57193, #ffcce6);
+       
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-radius: 25px;
+        width: 90vw;
+        justify-content: center;
+    }
+
+    .acc-inputbox {
+        border: 2px solid #a5d4d9;
+        text-align: center;
+        padding: 10px;
+        border-radius: 25px;
+        width: 80vw;
+    }
+
+    .acc-button { 
+        text-align: center;
+        width: 80vw;
+        height: auto;
+        background-color: #a5d4d9;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 25px;
+    }
+
+    #signin-error {
+        width: 80vw;
+    }
+}
+
+.acc-or-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.acc-or-container > hr {
+    flex-grow: 2;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: black;
+    height: 2px;
+}
+
+.acc-bookmark-bar {
+    background-color: #c2edf3;
+    padding: 5px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-radius: 25em;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bookmark-transition {
+    animation: fadeIn ease 0.76s
+}
+
+.acc-article-cont {
+    background-repeat: no-repeat;
+    background-image: url("/svg/account-blob.svg");
+    background-position: center;
+    background-size: auto;
+}
+
+/*my-profile/manage profile*/
+.change-password-form {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+}
+
+.my-profile-link {
+    text-align: center; 
+    background-color: #9d4341; 
+    margin-top: 10px; 
+    text-transform: uppercase;
+    border-radius: 6px;
+    color: white;
+    background-image: linear-gradient(#9d4341, #cc5b56);
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.my-profile-header {
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.change-email {
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #a5d4d9;
+    width: 500px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.change-password {
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #a5d4d9;
+    width: 500px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.current-password {
+    margin-bottom: 10px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid #a5d4d9;
+    width: 500px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.password-error {
+    margin-bottom: 200px;
+    font-size: 20px;
+}
+.email-error {
+    font-size: 20px;
+}
+
+.email-submit {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #a5d4d9;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.password-submit {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #a5d4d9;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 25px;   
+    font-size: 20px; 
+}
+
+.change-email-icon {
+    color: #a5d4d9;
+    position: relative;
+    top: -30px;
+}
+
+.change-password-icon {
+    color: #a5d4d9;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+  }
+
+@media screen and (max-width: 900px) {
+    .change-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .change-password {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .current-password {
+        margin-bottom: 10px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .email-submit {
+        width: 125px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .password-submit {
+        width: 125px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 25px;   
+        font-size: 20px; 
+    }
+
+    .change-email-icon {
+        color: #a5d4d9;
+        position: relative;
+        top: -25px;
+        scale: 90%
+    }
+    
+    .change-password-icon {
+        color: #a5d4d9;
+        scale: 90%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-item {
+        padding: 10px;
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    .change-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .change-password {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .current-password {
+        margin-bottom: 10px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 300px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .email-submit {
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .password-submit {
+        width: 100px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 25px;   
+        font-size: 20px; 
+    }
+
+    .change-email-icon {
+        color: #a5d4d9;
+        position: relative;
+        top: -25px;
+        scale: 80%
+    }
+    
+    .change-password-icon {
+        color: #a5d4d9;
+        scale: 80%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-item {
+        padding: 5px;
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 540px) {
+    .change-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 250px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .change-password {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 250px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    
+    .current-password {
+        margin-bottom: 10px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 250px;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+
+    .email-submit {
+        width: 75px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    
+    .password-submit {
+        width: 75px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 25px;   
+        font-size: 20px; 
+    }
+
+    .change-email-icon {
+        color: #a5d4d9;
+        position: relative;
+        top: -25px;
+        scale: 75%
+    }
+    
+    .change-password-icon {
+        color: #a5d4d9;
+        scale: 75%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-item {
+        padding: 5px;
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 470px) {
+    .change-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 200px;
+        padding-left: 20px;
+        font-size: 20px;
+        position: relative;
+        right: 20px;
+    }
+    
+    .change-password {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 200px;
+        padding-left: 20px;
+        font-size: 20px;
+        position: relative;
+        right: 20px
+    }
+    
+    .current-password {
+        margin-bottom: 10px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 200px;
+        padding-left: 20px;
+        font-size: 20px;
+        position: relative;
+        right: 20px
+    }
+
+    .email-submit {
+        width: 75px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 20px;
+        position: relative;
+        right: 20px
+    }
+    
+    .password-submit {
+        width: 75px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 25px;   
+        font-size: 20px; 
+        position: relative;
+        right: 20px
+    }
+
+    .change-email-icon {
+        color: #a5d4d9;
+        position: relative;
+        top: -25px;
+        scale: 70%
+    }
+    
+    .change-password-icon {
+        color: #a5d4d9;
+        scale: 70%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      .grid-item {
+        padding: 5px;
+        text-align: center;
+      }
+}
+
+@media screen and (max-width: 400px) {
+    .change-email {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 180px;
+        padding-left: 20px;
+        font-size: 15px;
+        position: relative;
+        right: 20px;
+    }
+    
+    .change-password {
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 180px;
+        padding-left: 20px;
+        font-size: 15px;
+        position: relative;
+        right: 20px
+    }
+    
+    .current-password {
+        margin-bottom: 10px;
+        height: 50px;
+        border-radius: 20px;
+        border: 2px solid #a5d4d9;
+        width: 180px;
+        padding-left: 20px;
+        font-size: 15px;
+        position: relative;
+        right: 20px
+    }
+
+    .email-submit {
+        width: 60px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 15px;
+        position: relative;
+        right: 20px
+    }
+    
+    .password-submit {
+        width: 60px;
+        height: 50px;
+        border-radius: 20px;
+        background-color: #a5d4d9;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 25px;   
+        font-size: 15px; 
+        position: relative;
+        right: 20px
+    }
+
+    .change-email-icon {
+        color: #a5d4d9;
+        position: relative;
+        top: -25px;
+        scale: 65%
+    }
+    
+    .change-password-icon {
+        color: #a5d4d9;
+        scale: 65%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+    }
+      
+      .grid-item {
+        padding: 2px;
+        text-align: center;
+      }
+}
+
+
+@media screen and (max-width: 350px) {
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        right:20px;
+    }
+}
+
+.delete-profile-button {
+    text-align: center; 
+    background-color: #9d4341;  
+    text-transform: uppercase;
+    border-radius: 6px;
+    color: white;
+    background-image: linear-gradient(#9d4341, #cc5b56);
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding-top: auto;
+    padding-bottom: auto;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.delete-confirmation {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-button {
+    text-align: center; 
+    background-color: #9d4341;  
+    text-transform: uppercase;
+    border-radius: 6px;
+    color: white;
+    background-image: linear-gradient(#9d4341, #cc5b56);
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}

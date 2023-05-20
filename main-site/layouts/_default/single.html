@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+{{ if .Params.thumbnail }}
+<div class="relative max-w-5xl mx-auto px-4">
+  <div>
+    <img src="{{ partial "utility/thumbnail.html" . }}" class="py-2 w-full h-96 object-contain" />
+    {{ if .Params.thumbnail }}
+    <p class="text-sm text-center"> {{ .Params.thumbnail_caption }} </p>
+    {{ end }}
+  </div>
+
+  <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+    {{ .Params.date.Format "January 2, 2006" }}
+  </div>
+</div>
+{{ end }}
+
+<article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+  <h1 class="text-2xl font-bold mb-2">{{ .Title }}</h1>
+  <span>
+    Author: <button onclick="document.getElementById('author').scrollIntoView({ behavior: 'smooth' });"> {{ .Params.Author }} </button>
+  </span> 
+
+  {{ .Content }}
+</article>
+
+{{ if .Params.Author }}
+
+{{ $author := "" }}
+{{ $authorName := .Params.Author  }}
+{{ range .Site.Data.aboutUs.sections }}
+  {{ range .people }}
+    {{ if eq .name $authorName }}
+      {{ $author = . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ if not (eq $author "") }}
+<div id="author" class="w-full bg-efs-gray">
+  <div class="container mx-auto">
+    {{ partial "single-author.html" $author }}
+  </div>
+</div>
+{{ end }}
+
+{{ end }}
+
+<div class="padding bg-color-efs-biege"></div>
+
+{{ end }}

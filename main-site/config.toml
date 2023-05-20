@@ -1,0 +1,29 @@
+languageCode = "en-US"
+baseurl = ""
+title = "Emerging Finsights"
+googleAnalytics = "G-3XPKY2ZZQK"
+
+[params]
+  description = "Finacial Insights from Emerging Talent"
+  name = "Emerging Finsights"
+  
+  darkModeToggle = false
+  enableSearch = true
+
+  copyright = "Copyright © 2021 - Emerging Finsights · All rights reserved"
+  favicon = "/images/favicon.gif" 
+  ascentColor = "bg-yellow-50"
+
+[params.homepage.social]
+  description = "admin@emergingfinsights.co.uk"
+  linkedin = "https://linkedin.com/company/emergingfinsights/"
+  email = "mailto:admin@emergingfinsights.co.uk"
+  instagram = "https://www.instagram.com/emergingfinsights/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

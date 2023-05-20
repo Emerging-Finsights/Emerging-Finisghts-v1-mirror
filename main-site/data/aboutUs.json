@@ -1,0 +1,178 @@
+{
+    "sections" : [
+        {
+            "name" : "founders",
+            "people" : [
+                {
+                    "name": "Charlie Williams",
+                    "position": "Co-founder",
+                    "thumbnail": "people/CHARLIE.jpeg",
+                    "degree": "BSc Economics",
+                    "interested": "Commodities, emerging markets, geopolitical and financial technologies",
+                    "fact": "Charlie skydived over Dubai",
+                    "linkedin": "https://www.linkedin.com/in/charlie-williams1124/"
+                },
+                {
+                    "name": "Jack Burrows",
+                    "position": "Co-founder",
+                    "thumbnail": "people/JACK.jpeg",
+                    "degree": "BSc Physics; MSc Financial Mathematics",
+                    "interested": "Innovation and technology in banking and risk management",
+                    "fact": "Jack motorbiked 1,900km down Vietnam",
+                    "linkedin": "https://www.linkedin.com/in/jack-burrows-11b180196/"
+                }
+            ]
+        },
+        {
+            "name" : "ESG",
+            "people" : [
+                {
+                    "name": "Bella Clarke",
+                    "position": "Head of ESG",
+                    "thumbnail": "people/BELLA.jpeg",
+                    "degree": "BSc Geography",
+                    "interested": "Sustainable finance",
+                    "fact": "Bella was a drummer in a girls rockband at school",
+                    "linkedin": "https://www.linkedin.com/in/bella-clarke-b636b11b2/"
+                },
+                {
+                    "name": "Kit Marks",
+                    "position": "ESG Analyst",
+                    "thumbnail": "people/KIT.jpeg",
+                    "degree": "BSc Economics",
+                    "interested": "The environmental sustainability of firms ",
+                    "fact": "Kit is a scuba diver and really into surfing",
+                    "linkedin": "https://www.linkedin.com/in/kit-marks-a8775a18a/"
+                },
+                {
+                    "name": "Aubrey McKinnon",
+                    "position": "ESG Analyst",
+                    "thumbnail": "people/AUBREY.jpeg",
+                    "degree": "MSc Astrophysics",
+                    "interested": "Environmentally sustainable banking and finance practices",
+                    "fact": "Aubrey is an avid Arsenal fan",
+                    "linkedin": "https://www.linkedin.com/in/aubrey-mckinnon-23b872140/"
+                },
+                {
+                    "name": "Bea Wilkinson",
+                    "position": "ESG Analyst",
+                    "thumbnail": "people/BEA.jpeg",
+                    "degree": "BSc Geography",
+                    "interested": "Conscious investing and how to report on ESG",
+                    "fact": "Bea was in a Bella Italia advert",
+                    "linkedin": "https://www.linkedin.com/in/beatricewilkinson/"
+                }
+            ]
+        },
+        {
+            "name" : "Fintech",
+            "people" : [
+                {
+                    "name": "Harley Scott-Ellis",
+                    "position": "Head of Fintech",
+                    "thumbnail": "people/HARLEY.jpeg",
+                    "degree": "BSc Finance",
+                    "interested": "Fixed income securities/instruments",
+                    "fact": "Harley loves playing golf",
+                    "linkedin": "https://www.linkedin.com/in/harley-scott-ellis-613b03204/"
+                },
+                {
+                    "name": "Oliver Watson",
+                    "position": "Fintech Analyst",
+                    "thumbnail": "people/OLIVER.jpeg",
+                    "degree": "BSc Computer Science",
+                    "interested": "Blockchain technology",
+                    "fact": "Oliver started a pizza business during lockdown, generating £1,100+ profit",
+                    "linkedin": "https://www.linkedin.com/in/oliver-watson-55a07919b/"
+                },
+                {
+                    "name": "Shikhaa Munglani",
+                    "position": "Fintech Analyst",
+                    "thumbnail": "people/SHIKHAA.jpeg",
+                    "degree": "BSc Economics; MSc Finance",
+                    "interested": "Growing use of fintech",
+                    "fact": "Shikhaa has gone for 3 treks in the Himalayas",
+                    "linkedin": "https://www.linkedin.com/in/shikhaa-munglani-605738148/"
+                },
+                {
+                    "name": "Flynn Baxter",
+                    "position": "Fintech Analyst",
+                    "thumbnail": "people/FLYNN.jpeg",
+                    "degree": "BSc Economics",
+                    "interested": "The applications of blockchains",
+                    "fact": "Flynn isa qualified tennis coach",
+                    "linkedin": "https://www.linkedin.com/in/flynn-baxter-94733a1b6/"
+                }
+            ]
+        },
+        {
+            "name" : "Marketing",
+            "people" : [
+                {
+                    "name": "Carmen De Castro",
+                    "position": "Head of Marketting",
+                    "thumbnail": "people/CARMEN.jpeg",
+                    "degree": "BSc Psychology; MSc Media Psychology",
+                    "interested": "Cryptocurrency and personal finance",
+                    "fact": "Carmen is multilingual and acts in her free time",
+                    "linkedin": "https://www.linkedin.com/in/carmen-de-castro-vecino-2228b31b6/"
+                }
+            ]
+        },
+        {
+            "name" : "UX Design",
+            "people" : [
+                {
+                    "name": "Alex Leonard",
+                    "position": "UX Designer",
+                    "thumbnail": "people/ALEX.jpeg",
+                    "degree": "BSc Psychology; MSc Media Psychology",
+                    "interested": "Consumer, Clinical and Aesthetic Psychology",
+                    "fact": "Alex loves coffee and has between 3 - 10 cups a day!",
+                    "linkedin": "https://www.linkedin.com/in/alexander-leonard-a54707216/"
+                }
+            ]
+        },
+        {
+            "name" : "developers",
+            "people" : [
+                {
+                    "name": "Matthew Benniston",
+                    "position": "Full Stack Developer",
+                    "thumbnail": "people/MATT.jpeg",
+                    "degree": "BSc Computer Science",
+                    "interested": "Cryptocurrency and decentralised currencies",
+                    "fact": "Matthew makes all of his projects on Github open source",
+                    "linkedin": "https://www.linkedin.com/in/matthew-benniston-896346217/"
+                },
+                {
+                    "name": "Sam Battams-Scott",
+                    "position": "Full Stack Developer",
+                    "thumbnail": "people/SAM.jpeg",
+                    "degree": "BSc Computer Science",
+                    "interested": "Cybersecurity, web development and functional programming",
+                    "fact": "Sam has a grade 8 qualification in Drums",
+                    "linkedin": "https://www.linkedin.com/in/samuel-battams-scott-116752168/"
+                },
+                {
+                    "name": "Liam Carolan",
+                    "position": "Full Stack Developer",
+                    "thumbnail": "people/LIAM.jpeg",
+                    "degree": "MSci Computer Science",
+                    "interested": "Cryptocurrency and their inner workings",
+                    "fact": "Liam has over 30 cousins",
+                    "linkedin": "https://www.linkedin.com/in/liam-carolan-0a42541a3/"
+                },
+                {
+                    "name": "Tino Tom",
+                    "position": "Full Stack Developer",
+                    "thumbnail": "people/TINO.jpeg",
+                    "degree": "MSci Computer Science",
+                    "interested": "Game Development and Natural Language Processing",
+                    "fact": "Tino shares his name with an Elephant, an Island and a Storm!",
+                    "linkedin": "https://www.linkedin.com/in/tino-tom/"
+                }
+            ]
+        }
+    ] 
+}

@@ -1,0 +1,37 @@
+# **General Requirements**
+-	Create Website
+-	Market ticker at the top of the page
+-	Large logo below the ticker in the centre – should be visible on all pages
+-	Articles contained under different categories
+    -	Home
+    -	ESG
+    -	FinTech
+    -	Books
+    -	Deadlines
+-	List of articles with their picture, who has written them with interactive options
+-	Large eye-catching article on front page
+-	Search bar: to the right of the page, between market ticker and category titles.
+-	Home page
+    -	scrollable list of articles
+-	About us page
+    -	intro to company
+    -	the team
+        -	organised by their business function
+        -	picture of each team member
+        -	interactive picture, when clicked will display a description of the person, their degree, articles they’ve written, LinkedIn link etc.
+-	Book’s page
+    -	book of the week – have picture of book on left, small review on the right. Previous book of the week below.
+    -	Rating option (need to talk about accounts or anonymous reviews) ‘Our Score’ and user score
+    -	affiliate marketing scheme, link to Amazon 
+    -	other commenting/reviewing capabilities
+-	Deadlines
+    -	for graduate jobs and internship deadlines
+    -	filters
+        -	company
+        -	role
+        -	internship/ grad job
+        -	potentially sector, then company
+    -	link to company website of job listing
+    -	resemble calendar
+    -	have each company logo present
+-	Colours: #fffff1, #fff1e5, #a5d4d9, #7f7f7f

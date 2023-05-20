@@ -1,0 +1,45 @@
+<div data-type="bookmark" data-id="{{ md5 .Permalink }}" class="rounded article-container mx-auto">
+    {{ if .Params.thumbnail }}
+    <div>
+      <div class="flex flex-wrap flex-row justify-center md:justify-start">
+        <div class="relative">
+          <a href="{{ .Permalink }}"> 
+            <img src="{{ partial "utility/thumbnail.html" . }}" alt="{{ .Params.title }}" class="article-image" /> 
+          </a>
+
+          {{ if ne (.Scratch.Get "hide_bookmark_button") true }}
+          <div id="bookmark-empty" style="display: none;" onclick="bookmarks.bookmarkItem(this, '{{ md5 .Permalink }}', '{{ .Permalink }}')" 
+            class="absolute top-4 left-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+            <img src="/images/bookmark-empty.png">
+          </div>
+  
+          <div id="bookmark-filled" style="display: none;" onclick="bookmarks.unbookmarkItem(this, '{{ md5 .Permalink }}', '{{ .Permalink }}')" 
+            class="absolute top-4 left-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+            <img src="/images/bookmark-filled.png">
+          </div>          
+          {{ end}}
+
+          <div class="block sm:hidden absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+            {{ .Params.date.Format "Jan 2, 06" }}
+          </div>
+        </div>
+
+      {{ end }}
+        <div>
+        <a href="/{{ .Section | urlize }}"> <div class="article-section"> {{ .Section }}</div></a>
+        <a href="{{ .Permalink }}"> <h1 class="article-title">{{ .Params.title }}</h1> </a>
+        <a href="{{ .Permalink }}"> <div class="preview-text">{{ .Params.description }}</div> </a>
+        </div>
+
+        <div class="flex-grow relative hidden sm:block">
+          <div class="absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5 bookmark-transition">
+            {{ .Params.date.Format "Jan 2, 06" }}
+          </div>
+        </div>
+      </div>   
+
+      <a href="/about/#{{ .Params.author }}" class="analyst-text mx-auto"><div >Analyst: {{ .Params.author }}</div></a>
+    </div>
+</div>
+
+<hr class="article-divide w-full mx-auto">

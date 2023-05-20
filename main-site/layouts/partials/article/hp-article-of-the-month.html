@@ -1,0 +1,40 @@
+
+{{ $articles_of_the_week := (where (where (where .Site.RegularPages "Type" "blog") "Params.aotw" "!=" nil ) "Params.aotw" true).ByDate.Reverse }}
+{{ $normal_article := first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "blog") }}
+{{ range first 1 (append $normal_article (first 1 $articles_of_the_week)) }}
+
+<div class="grid justify-items-center">
+<div class="bg-efs-logo w-72 xxl p-5 rounded-no-shadow text-center text-white z-5 hp-aotm">
+    <a class="block" href="{{ .Permalink }}">
+        <h1 class="text-3xl pb-5 hp-aotm-header">Article of the Month</h1>
+        <div class="pb-5 opacity-50 hp-aotm-month">{{ .Params.month }}</div>
+        <div class="text-2xl pb-5 hp-aotm-title">{{ .Title }} </div>
+    </a>
+    <div class="relative w-60 picxl mx-auto group">
+        <a class="block" href="{{ .Permalink }}">
+            <img class="block mx-auto" src="{{ partial "utility/thumbnail.html" . }}" alt="{{ .Site.Title }}"/> 
+        </a>
+        <div class="absolute left-0 top-0 w-full h-full flex items-center justify-center transition-all bg-opacity-0 opacity-0 group-hover:bg-opacity-30 group-hover:opacity-100 bg-black">
+            {{ with partial "utility/get_author.html" .Params.author }} 
+            <a href="/about/#{{ .name }}">
+                <div class="mx-auto">
+                    <img class="mx-auto transform transition-all ring-0 hover:ring-2 ring-red-50 hover:shadow-2xl hover:scale-110 block w-24 h-24 rounded-full object-cover" src="{{ partial "utility/person-thumbnail.html" . }}" />
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+    <div class="pb-5 mt-5 font-xxl hp-aotm-analyst">
+        Analyst: 
+        <a class="hover:underline" href="/about/#{{ .Params.author }}">
+            {{ .Params.author }}
+        </a>
+    </div>
+    
+    <div class="pb-8 hp-aotm-description text-center">
+        {{ .Params.description }}
+    </div>
+</div>
+</div>
+
+{{ end }}

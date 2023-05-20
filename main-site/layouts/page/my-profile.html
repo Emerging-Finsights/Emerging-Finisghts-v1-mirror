@@ -1,0 +1,81 @@
+{{ define "main" }}
+<script defer type="text/javascript" src="/scripts/my-profile.js"></script> 
+<h1 class="my-profile-header">Manage Profile</h1>
+
+<div class="wrap" style="text-align: center;">
+<form id="change-email-form">
+    <div class="grid-container">
+    <div class="grid-item">
+    <div
+    target="_blank"
+    rel="noopener"
+    aria-label="Email"
+    class="change-email-icon p-2 inline-block transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+    >
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="80"
+    height="80"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <rect x="4" y="4" width="16" height="16" rx="2" />
+    <path d="M8 9h1l3 3l3 -3h1" />
+    <line x1="8" y1="15" x2="10" y2="15" />
+    <line x1="14" y1="15" x2="16" y2="15" />
+    <line x1="9" y1="9" x2="9" y2="15" />
+    <line x1="15" y1="9" x2="15" y2="15" />
+    </svg>
+    </div>
+    </div>
+    <div class="grid-item"><input id="change-email" class="change-email" type="text" required placeholder="New Email"></div>
+    <div class="grid-item"><input id="email-submit" class="email-submit" type="submit" value="EDIT"></div>
+    </div>
+    <div id="email-error" class="email-error"></div>
+</form> 
+
+
+<form id="change-password-form">
+    <div class="grid-container">
+    <div class=grid-item>
+    <div
+    target="_blank"
+    rel="noopener"
+    aria-label="Password"
+    class="change-password-icon p-2 inline-block transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+    width="80" 
+    height="85" 
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round">
+    <path fill="#a5d4d9" d="M18 10v-4c0-3.313-2.687-6-6-6s-6 2.687-6 6v4h-3v14h18v-14h-3zm-5 7.723v2.277h-2v-2.277c-.595-.347-1-.984-1-1.723 0-1.104.896-2 2-2s2 .896 2 2c0 .738-.404 1.376-1 1.723zm-5-7.723v-4c0-2.206 1.794-4 4-4 2.205 0 4 1.794 4 4v4h-8z"/>
+    </svg>
+    </div>
+    </div>
+    <div class="grid-item">
+    <ul>
+    <li><input id="current-password" class="current-password" type="password" required placeholder="Current Password"></li>
+    <li><input id="change-password" class="change-password" type="password" required placeholder="New Password"></li>
+    </ul>
+    </div>
+    <div class="grid-item">
+    <input id="password-submit" class="password-submit" type="submit" value="EDIT">
+    </div>
+    </div>
+    <div id="password-error" class="password-error"></div>
+</form> 
+
+<div class="delete-profile-button" onclick="window.location.replace('/delete-confirm')">Delete Account</div>
+
+</div>
+
+{{ end }}

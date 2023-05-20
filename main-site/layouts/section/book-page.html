@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="book-page-container">
+<h1 class="container text-3xl font-bold list-title books-page-title">{{ .Params.pageTitle }}</h1>
+  
+{{- partial "book/book-of-the-week.html" . -}}
+
+  <hr class="page-divide">
+
+  {{ $paginator := .Paginate .Pages.ByDate.Reverse 6 }}
+  <div class="book-card container grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+    {{ range $paginator.Pages }}
+      {{- partial "book/book-card.html" . -}}
+    {{ end }}
+  </div>
+</div>
+
+  {{- partial "utility/pagination.html" . -}}
+
+  
+{{ end }}

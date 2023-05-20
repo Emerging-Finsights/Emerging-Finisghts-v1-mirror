@@ -1,0 +1,12 @@
+{{ $imagelink := false }}
+
+{{ if (.Resources.Match .Params.thumbnail) }}
+    {{ range (first 1 (.Resources.Match .Params.thumbnail)) }}
+        {{ $image :=  .Resize "480x" }} 
+        {{ $imagelink = $image.RelPermalink }}
+    {{ end }}
+{{ else }}
+    {{ $imagelink = .Params.thumbnail }}
+{{ end }}
+
+{{ return $imagelink }}

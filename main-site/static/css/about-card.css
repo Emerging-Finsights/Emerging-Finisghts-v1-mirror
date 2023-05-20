@@ -1,0 +1,47 @@
+.about-img {
+    border-radius: 50%;
+}
+
+.role-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 540px) {
+    .role-card {
+        display:flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 25px;
+        flex-wrap:wrap;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.about-card {
+    
+}
+
+.role-text {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.meet-text {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+}
+
+.core-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}

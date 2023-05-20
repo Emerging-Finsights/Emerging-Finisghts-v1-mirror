@@ -1,0 +1,129 @@
+body {
+    background-color: #fffff1;
+}
+
+.logolink {
+    display:block;
+    margin-left:auto;
+    margin-right: auto; 
+    width: 60%; 
+    height: auto;
+}
+
+@media (max-width: 540px) { 
+  .logolink {
+    display:block;
+    margin-left:auto;
+    margin-right: auto; 
+    width: 90vw; 
+    height: auto;
+}
+}
+
+#contact {
+    cursor:pointer;
+}
+
+.side-nav {
+    font-size: 22px;
+    margin-right: 0px;
+}
+
+.nav-bar {
+    margin-bottom: 1px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.upper-nav {
+    text-transform: capitalize;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.contact-us {
+    background-color: #e7e6e6;
+}
+
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #63A8A6;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    float: right;
+    border-radius: 0px 5vh 0px 0px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
+  .goright {
+    
+    float: right;
+    position:relative;
+  }
+
+  .logout {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .logout:hover {
+    color: #f1f1f1;
+  }
+
+  .mobile-const {
+    display: block;
+  }
+
+  .mobile-hide {
+    display: auto;
+  }
+
+  .mobile-show {
+    display: none;
+  }
+
+  @media (max-width: 1250px) {
+    .mobile-hide {
+      display: none;
+    }
+  
+    .mobile-show {
+      display: block;
+    }
+  }

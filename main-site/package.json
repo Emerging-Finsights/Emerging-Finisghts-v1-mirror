@@ -1,0 +1,20 @@
+{
+  "name": "emerging-finsights",
+  "version": "1.0.0",
+  "description": "Emerging finsights website",
+  "repository": "https://github.com/Emerging-Finsights/Website-Development",
+  "scripts": {
+    "start": "hugo --gc",
+    "dev": "hugo server --gc",
+    "build": "NODE_ENV=production hugo --gc"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.1",
+    "tailwindcss": "^2.1.1"
+  }
+}

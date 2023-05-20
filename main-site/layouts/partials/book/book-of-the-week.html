@@ -1,0 +1,30 @@
+{{ $books_of_the_week := (where (where (where .Site.RegularPages "Type" "book") "Params.botw" "!=" nil ) "Params.botw" true).ByDate.Reverse }}
+{{ $normal_book := first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "book") }}
+{{ range first 1 (append $normal_book (first 1 $books_of_the_week)) }}
+<div class="max-w-screen-md mx-auto ">
+<h1 class="text-4xl font-bold mb-4 botw-title">Book of the Month</h1>
+</div>
+<div class="flex items-center">
+    <div class="botw-box container grid md:grid-cols-2 items-center" style="justify-self: end;">
+        <div style="justify-self:end">
+            <a target="_blank" href="{{ .Params.link }}">
+            <img class="shadow-sm botw-book-page-image" src="{{ partial "utility/thumbnail.html" . }}" alt="{{ .Site.Title }}" />
+            <p class="buy-link-botw"> Buy Now </p>
+        </a>
+        </div>
+        <div class="botw-page-main">
+                EFS rating:
+                <div class="botw-rating">
+                {{ range (seq 1 .Params.rating) }}⭐{{ end }}
+                {{ .Params.rating }}
+                </div>
+                <div class="botw-description">
+                <b>Review:</b>
+                {{ .Params.description }} To read more about this book, please scroll down.
+                </div>
+                <a href="/about/#{{ .Params.ratedby }}" class="rated-by">Rated By: {{ .Params.ratedby }}</a>
+        </div>  
+    </div>
+</div>
+
+{{end}}

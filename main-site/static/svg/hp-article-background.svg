@@ -1,0 +1,10 @@
+<svg viewbox="0 0 100 50" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<rect
+    x="0" y="0" 
+    width="150%" height="1000px" 
+    fill="black" stroke="black" 
+    stroke-width="5" 
+    preserveAspectRatio="xMaxYMin slice"
+    transform="rotate(-8 1 1) translate(-360,300)" 
+    style="opacity:0.63;"/>
+</svg>

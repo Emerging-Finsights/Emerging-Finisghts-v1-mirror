@@ -1,0 +1,32 @@
+
+<hr class="w-full h-1 border-none bg-black">
+<footer class="flex flex-col items-stretch md:flex-row w-full p-2">
+  <div class="px-2 flex items-center flex-col flex-none md:items-start">
+    <p class="font-serif text-2xl">Contact Us:</p>
+    <div class="flex flex-row items-center m-1">
+      <svg viewBox="0 0 30 30" width="30" class="flex-none m-1 ml-4">       
+          <image xlink:href="/svg/mail-icon.svg" width="30" height="30"/>    
+      </svg>      
+      <p class="flex-none font-thin sm:font-xs">admin@emergingfinsights.co.uk</p>
+    </div>
+  </div>
+  <div class="px-2 pt-5 flex flex-grow flex-col items-center  md:pt-0">
+    <p class="font-serif text-xl text-center">Subscribe to our weekly newsletter here:</p>
+    <p class="font-thin text-center">Coming Soon...</p>
+  </div>
+  <div class="px-2 pt-5 flex-none flex flex-col items-center md:pt-0">
+    <a href="/about" class="font-thin"> About Us </a>
+    <p class="font-thin">Privacy Notice</p>
+  </div>
+
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+{{ if .Site.Params.enableSearch }}
+{{- partial "search-ui.html" . -}}
+{{ end }}

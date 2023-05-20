@@ -1,0 +1,87 @@
+.hp-aotm {
+  height: 527.6px;
+}
+
+@media screen and (min-width: 500px) {
+  .xxl {
+    width:20rem;    
+  }
+}
+
+.text-md {
+  font-size: 0.95rem;
+  line-height: 1.245rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .hp-aotm {
+    height: auto;
+  }
+  .threexl {
+    width: 24rem;
+    height: 24rem;
+  }
+  .xxl {
+    width: 24rem;
+  }
+  .picxl {
+    width: 20rem;
+  }
+  .bpicxl {
+    width: 15rem;
+  }
+  .font-xxl {
+    font-size: 1.25rem;
+  }
+  .hp-aotm-header {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .hp-aotm-month {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .hp-aotm-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hp-aotm-analyst {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hp-aotm-description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hp-botw-title {
+    font-size: 3rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+  }
+  .hp-botw-week {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .hp-botw-rating {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
+  }
+  .text-md {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.max-lines {
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+}

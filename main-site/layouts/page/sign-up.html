@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+ <script type="text/javascript" src="/scripts/sign-up.js"></script>
+ <div class="acc-signup-container">
+    <div class="acc-background">
+      <h1 class="acc-title text-3xl"> Sign Up Free Today </h1>
+
+      <p class="text-xl"> Create an account today to access exclusive Emerging Finsights features </p>
+
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <form id="signup-form">
+          <table style="margin-bottom: 40px;"> 
+            <tr> <td> <h3 class="acc-subtitle text-xl"> Email </h3> <input id="signup-email" class="acc-inputbox text-xl" type="text" required placeholder=""> </td> </tr>
+            <tr> <td> <h3 class="acc-subtitle text-xl"> Confirm Email </h3> <input id="signup-emailconf" class="acc-inputbox text-xl" type="text" required placeholder=""> <div id="emailerror" style="color:#ca6562"></div> </td> </tr>
+            <tr> <td> <h3 class="acc-subtitle text-xl"> Password </h3> <input id="signup-password" class="acc-inputbox text-xl" type="password" required placeholder=""> </td> </tr>
+            <tr> <td> <h3 class="acc-subtitle text-xl"> Confirm Password </h3> <input id="signup-passwordconf" class="acc-inputbox text-xl" type="password" required placeholder=""> <div id="pwerror" style="color:#ca6562"></div> </td> </tr>
+            <tr> <td> <div id="signup-error" style="color:#000000"></div> </td> </tr>
+          </table>
+          <div> <input class="acc-button text-xl" type="submit" value="CREATE ACCOUNT"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  
+{{ end }}

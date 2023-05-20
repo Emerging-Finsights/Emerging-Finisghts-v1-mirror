@@ -1,0 +1,17 @@
+
+<a href="{{.link}}" class="block group m-2 rounded hover:bg-black hover:bg-opacity-10 active:bg-opacity-30">
+    <div class="flex flex-col items-center text-center sm:w-64 md:w-80 lg:w-96">
+        <div class="flex flex-row items-center flex-grow">
+            <svg viewBox="0 0 80 80" width="80px" class="p-3 rounded-full">       
+                <image xlink:href={{.icon}} width="80" height="80"/>    
+           </svg>
+           {{ if false }}
+           <span class="text-pink-600">  </span>
+           <span class="text-blue-500">  </span>
+           {{ end }}
+           <h1 class="pr-3 text-3xl {{.textColour}} group-hover:underline">{{.text}}<h1>
+        </div>
+        <img class="hidden w-full m-0 p-5 border-0 sm:inline" src={{.previewImage}} alt="Preview Image"></image>
+    </div>
+</a>
+

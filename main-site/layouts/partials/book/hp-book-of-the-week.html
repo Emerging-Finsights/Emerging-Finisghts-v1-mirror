@@ -1,0 +1,29 @@
+
+{{ $books_of_the_week := (where (where (where .Site.RegularPages "Type" "book") "Params.botw" "!=" nil ) "Params.botw" true).ByDate.Reverse }}
+{{ $normal_book := first 1 (where .Site.RegularPages.ByDate.Reverse "Type" "book") }}
+{{ range first 1 (append $normal_book (first 1 $books_of_the_week)) }}
+
+<a class="grid justify-items-center" href="/books/#{{ .Permalink }}">
+<div class="group mx-auto bg-efs-logo w-72 xxl p-5 rounded-no-shadow text-center text-white z-5 hp-botw">
+    <h1 class="text-3xl pb-2 hp-botw-title">Book of the Month</h1>
+    <div class="pb-2 font-bold hp-botw-week">{{ .Params.week }}</div>
+    <div class="pb-2 hp-botw-rating">EFS rating:
+        {{ range (seq 1 .Params.rating) }}⭐{{ end }}
+        {{ .Params.rating }}
+    </div>
+    <div class="grid">
+        <img class="col-start-1 row-start-1 w-52 bpicxl pb-5 mx-auto sm:group-hover:invisible " src="{{ partial "utility/thumbnail.html" . }}" alt="{{ .Site.Title }}"/>
+        <div class="col-start-1 row-start-1 invisible pb-8 pr-5 text-md hidden sm:block group-hover:visible">{{ .Params.description }}</div>
+    </div>
+    <div class="relative pb-4 group">
+        <a class="group-hover:underline bg-black rounded-no-shadow pt-3 pb-3 pl-4 pr-10 w-70 block" href="{{ .Params.link }}" target="_blank">
+            Purchase from 
+        </a>
+        <a href="{{ .Params.link }}">
+            <img class="group-hover:animate-bounce absolute right-0 -inset-y-2 rounded-full h-16 w-16" src="/images/amazon.jpg" alt="Amazon"/>
+        </a>
+    </div>
+</div>
+</a>
+
+{{ end }}

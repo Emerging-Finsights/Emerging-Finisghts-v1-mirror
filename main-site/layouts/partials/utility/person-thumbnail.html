@@ -1,0 +1,12 @@
+{{ $imagelink := false }}
+
+{{ if (resources.Get .thumbnail) }}
+    {{ with resources.Get .thumbnail }}
+        {{ $image :=  .Resize "300x" }} 
+        {{ $imagelink = $image.RelPermalink }}
+    {{ end }}
+{{ else }}
+    {{ $imagelink = .thumbnail }}
+{{ end }}
+
+{{ return $imagelink }}

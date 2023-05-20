@@ -1,0 +1,7 @@
+<div class="flex flex-col items-center py-5">
+  <h1 class="absoulte text-center text-white text-4xl bg-efs-logo p-4 rounded-no-shadow mx-auto w-4/5 -mt-14 mb-10 z-10">Check out our social media</h1>
+  <div class="flex flex-row flex-wrap pt-2 mx-auto items-center justify-center text-center z-10">
+      {{- partial "social-card.html" .Site.Data.socials.instagram -}}
+      {{- partial "social-card.html" .Site.Data.socials.linkedin -}}
+  </div>
+</div>

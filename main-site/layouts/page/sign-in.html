@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+  <!-- Load sign-in script to handle callbacks -->
+  <script type="text/javascript" src="/scripts/sign-in.js"> </script> 
+
+  <div class="acc-container">
+    <div class="acc-background">
+      <h1 class="acc-title text-3xl"> Sign In </h1>
+
+      <form id="signin-form" method="POST">
+        <table style="margin-bottom: 40px;"> 
+          <tr> <td> <h2 class="acc-subtitle text-xl"> Email Address </h2> </td> </tr>
+          <tr> <td> <input id="signin-email" class="acc-inputbox text-xl" type="text" required placeholder=""> </td> </tr>
+          <tr> <td> <h2 class="acc-subtitle text-xl"> Password </h2> </td> </tr>
+          <tr> <td> <input id="signin-password"  class="acc-inputbox text-xl" type="password" required placeholder=""> </td> </tr>
+          <tr> <td> <a class="acc-forgot-password text-xl" href="/forgotten-password"> Forgotten Password? </a> </td> </tr>
+          <tr> <td> <div id="signin-error" style="color:#000000; width: min-content; height: fit-content;"></div> </td> </tr>
+        </table>
+        <div> <input class="acc-button text-xl" type="submit" value="SIGN IN"></div>
+      </form>
+      <div class="acc-or-container">
+        <hr>
+        <p> OR </p>    
+        <hr>
+      </div>
+
+      <div class="acc-button"> <a href="/sign-up" class="text-xl"> SIGN UP FOR FREE NOW </a> </div>
+    </div>
+
+  </div>
+  
+{{ end }}

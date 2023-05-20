@@ -1,0 +1,16 @@
+{
+    "instagram":{
+        "text":"Instagram",
+        "icon":"/svg/instagram-logo.svg",
+        "previewImage":"/images/instagram-preview.png",
+        "textColour": "text-pink-600",
+        "link":"https://www.instagram.com/emergingfinsights/"
+    },
+    "linkedin":{
+        "text":"LinkedIn",
+        "icon":"/svg/linkedin-logo.svg",
+        "previewImage":"/images/linkedin-preview.png",
+        "textColour": "text-blue-500",
+        "link":"https://linkedin.com/company/emergingfinsights/"
+    }
+}
